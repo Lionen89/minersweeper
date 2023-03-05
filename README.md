@@ -17,6 +17,8 @@
 ## Установка
 
 ```bash
+git clone git@github.com:Lionen89/minersweeper.git
+cd minersweeper
 npm install
 ```
 
