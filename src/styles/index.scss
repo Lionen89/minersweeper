@@ -1,0 +1,55 @@
+// Настройки
+@use "_config/variables" as *;
+@use "_config/font" as *;
+
+// Миксины
+@use "_mixins/container" as *;
+@use "_mixins/flex" as *;
+@use "_mixins/reset" as *;
+
+@use "blocks/paper";
+@use "blocks/button";
+
+// Компоненты
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  @include reset-model();
+}
+
+button {
+  @include reset-button();
+}
+
+input,
+button,
+textarea,
+select {
+  outline: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.wrapper {
+  @include wrapper();
+}
+
+.container {
+  @include container();
+}
+
+html,
+body {
+  @include reset-model();
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  @include font18();
+}

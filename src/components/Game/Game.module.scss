@@ -1,0 +1,101 @@
+@use '../../styles/utils' as *;
+
+.game {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  // border: 16px solid #c1c1c1;
+  // box-shadow: inset 0 -7px 20px -10px rgba(0, 0, 0, 1);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  background: #c1c1c1;
+  margin-bottom: 1em;
+
+  // border-bottom: 16px solid #c1c1c1;
+  // box-shadow: inset 0 -7px 20px -10px rgba(0, 0, 0, 0.5);
+
+  .status__button {
+    @include flex-center();
+    @include reset-model();
+    background: inherit;
+    height: 28px;
+    width: 28px;
+    &_normal {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: 1px -23px;
+      &:active {
+        background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+        background-position: -26px -23px;
+      }
+    }
+    &_win {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -80px -23px;
+    }
+    &_lose {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -107px -23px;
+    }
+    &_affraid {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -53px -23px;
+    }
+  }
+  .scoreboard {
+    @include reset-model;
+    height: 23px;
+    display: flex;
+  }
+  .numbers {
+    @include reset-model;
+    display: block;
+    height: 23px;
+    width: 13px;
+    &_zero {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: 13px 0px;
+    }
+    &_one {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: 0px 0px;
+    }
+    &_two {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -14px 0px;
+    }
+    &_three {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -28px 0px;
+    }
+    &_four {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -42px 0px;
+    }
+    &_five {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -56px 0px;
+    }
+    &_six {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -70px 0px;
+    }
+    &_seven {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -84px 0px;
+    }
+    &_eight {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -98px 0px;
+    }
+    &_nine {
+      background-image: url('../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: -112px 0px;
+    }
+  }
+}

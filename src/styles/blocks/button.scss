@@ -1,0 +1,23 @@
+@use "../utils" as *;
+
+.button {
+  @include flex-center();
+  @include font18();
+  font-weight: bold;
+  color: $white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  &:hover {
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%),
+    0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
+  }
+  &:active {
+    opacity: 0.9;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%),
+    0 4px 5px 0 rgb(0 0 0 / 14%),
+    0 1px 10px 0 rgb(0 0 0 / 12%);
+  }
+}

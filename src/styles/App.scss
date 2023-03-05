@@ -1,0 +1,25 @@
+@use '../styles/utils' as *;
+
+body {
+  background: $bg;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40px;
+}

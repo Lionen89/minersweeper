@@ -1,0 +1,79 @@
+@use '../../../styles/utils' as *;
+
+.cell {
+  @include flex-center();
+  font-weight: bold;
+  background: $gray;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+
+  &.hidden {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: 0px 201px;
+  }
+
+  &.shown {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -17px 201px;
+  }
+  &__size {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.shown {
+  &_one {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: 0px 184px;
+  }
+  &_two {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -17px 184px;
+  }
+  &_three {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -34px 184px;
+  }
+  &_four {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -51px 184px;
+  }
+  &_five {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -68px 184px;
+  }
+  &_six {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -85px 184px;
+  }
+  &_seven {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -102px 184px;
+  }
+  &_eight {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -119px 184px;
+  }
+  &_bomb {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: 54px 201px;
+    &_blowup {
+      background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: 20px 201px;
+    }
+    &_finded {
+      background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+      background-position: 37px 201px;
+    }
+  }
+  &_flag {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -173px 201px;
+  }
+  &_question {
+    background-image: url('../../../images/minesweeper-sprites_9TPZzv3.png');
+    background-position: -190px 201px;
+  }
+}
