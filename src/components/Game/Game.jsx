@@ -15,7 +15,6 @@ const Game = ({ data }) => {
 
   useEffect(() => {
     let interval = null;
-
     if (isTimeActive) {
       interval = setInterval(() => {
         setSeconds(seconds => seconds + 1);
@@ -31,9 +30,6 @@ const Game = ({ data }) => {
   useEffect(() => {
     if (gameStatus !== 'start') {
       setIsTimeActive(false);
-    }
-    if (gameStatus === 'win') {
-      setIsTimeActive(true);
     }
   }, [gameStatus]);
 

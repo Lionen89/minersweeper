@@ -2,8 +2,13 @@ import styles from './Board.module.scss';
 import React from 'react';
 import Cell from '../UI/Cell/Cell.jsx';
 import { produce } from 'immer';
-import { showEmptyCells, showGridLose, showGridWin } from '../../utils/index.js';
-import { generateRandomMines, generateNeighbors } from '../../utils/index.js';
+import {
+  showEmptyCells,
+  showGridLose,
+  showGridWin,
+  generateRandomMines,
+  generateNeighbors
+} from '../../utils/index.js';
 
 const Board = React.memo(props => {
   const {
